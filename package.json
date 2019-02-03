@@ -1,0 +1,36 @@
+{
+  "name": "app-template",
+  "version": "1.0.0",
+  "description": "Starter template for AUDL2018",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AUDL2018/app-template.git"
+  },
+  "keywords": [
+    "Express",
+    "template",
+    "starter"
+  ],
+  "author": "Henning Horn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AUDL2018/app-template/issues"
+  },
+  "homepage": "https://github.com/AUDL2018/app-template#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "nodemon": "^1.18.4",
+    "sequelize": "^4.37.6",
+    "socket.io": "^2.1.0",
+    "sqlite": "^3.0.0",
+    "sqlite3": "^4.0.2"
+  }
+}

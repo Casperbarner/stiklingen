@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stiklingen</title>
+</head>
+
+<body>
+  <!-- Include _header.html using EJS template engine -->
+  <%- include('_header.html') %>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 mx-auto">
+
+
+
+
+
+          <h2 class="text-uppercase text-center"> Her kan man skrive og publicere et blogindlæg </h2>
+
+
+          <form id="blogPostForm">
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Titel</label>
+              <textarea class="form-control form-control-lg" id="title" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Direkte billede URL</label>
+              <textarea class="form-control" id="image" rows="2"></textarea>
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Brødtekst</label>
+              <textarea class="form-control" id="content" rows="30"></textarea>
+            </div>
+
+            <button type="submit" id="submitBlogPost" class="btn btn-success float-right">Post indlæg</button>
+            <button type="submit" id="preview" class="btn btn-primary float-left">Preview</button>
+          </form>
+          <br>
+          <hr>
+
+
+
+
+
+        </div>
+      </div>
+      <!-- PREVIEW POST -->
+      <div class="preview">
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Include _footer.html using EJS template engine -->
+    <%- include('_footer.html') %>
+</body>
+<script type="text/javascript">
+  registerPostBlog();
+  registerPreviewPostBlog();
+</script>
+
+</html>

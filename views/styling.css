@@ -1,0 +1,11 @@
+#image-big {
+    width:100%;
+    max-width: :100px;
+}
+
+
+#imageExpanded {
+  position: absolute;
+   bottom: 8px;
+   left: 16px;
+}
