@@ -43,9 +43,6 @@ app.get('/', (req, res) => {
     res.render('main', { title: 'Main page title' })
 })
 
-app.get('/expanded', (req, res) => {
-    res.render('expanded', { title: 'Expanded title' })
-})
 
 app.get('/postblog', (req, res) => {
     res.render('postblog', { title: 'Postblog page' })
@@ -55,16 +52,6 @@ app.get('/blogposts/:id', (req, res) => {
     res.render('blogpost', { title: 'Blogpost page' })
 })
 
-// About page
-app.get('/about', (req, res) => {
-    // Example socket.io event
-    io.emit('page view', {
-        page: 'about'
-    })
-
-    // Render the about.html in the views folder
-    res.render('about', { title: 'About page' })
-})
 
 // Synchronize database models
 // Documentation: http://docs.sequelizejs.com/
